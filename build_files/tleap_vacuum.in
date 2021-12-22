@@ -1,0 +1,8 @@
+source leaprc.gaff
+MOL = loadmol2 ethanol.bcc.mol2
+model = loadpdb ethanol.pdb
+
+# Skipping solvation ...
+saveamberparm model ethanol_vacuum.prmtop ethanol_vacuum.rst7
+desc model
+quit

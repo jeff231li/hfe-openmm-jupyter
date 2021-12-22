@@ -1,0 +1,19 @@
+source leaprc.gaff
+source leaprc.water.tip3p
+MOL = loadmol2 ethanol.bcc.mol2
+model = loadpdb ethanol.pdb
+
+solvatebox model TIP3PBOX 13.100000000000001 iso
+remove model model.1002
+remove model model.1003
+remove model model.1004
+remove model model.1005
+remove model model.1006
+remove model model.1007
+remove model model.1008
+remove model model.1009
+remove model model.1010
+remove model model.1011
+saveamberparm model ethanol_tip3p.prmtop ethanol_tip3p.rst7
+desc model
+quit
