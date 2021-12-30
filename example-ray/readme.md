@@ -1,0 +1,1 @@
+This folder provides an example to scale the hydration free energy (HFE) calculation illustrated in this repository to a single multi-GPUs machine or large clusters using [ray-project](https://docs.ray.io/en/master/?badge=master).
